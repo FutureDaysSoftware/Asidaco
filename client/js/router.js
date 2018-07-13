@@ -27,7 +27,7 @@ module.exports = Object.create( { ...require('../../lib/MyObject'),
         const name = this.pathToView( path[0] ),
             view = this.Views[ name ] ? name : 'home'
 
-        this.header.selectNav( path[0] )
+        this.header.selectNav( path[0] || 'home' )
 
         if( view === this.currentView ) return this.views[ view ].onNavigation( path.slice(1) )
 
