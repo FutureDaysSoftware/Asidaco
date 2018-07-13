@@ -1,0 +1,20 @@
+.Header
+    padding: 2rem 0 3rem
+    flexCenter(column)
+    
+    nav
+        flexCenter(row)        
+        margin-top: 2rem
+        
+        >li
+            background-color: $Blue
+            color: white
+            padding: .5rem
+            margin: 0 .75rem
+            width: 7rem
+            text-align: center
+            cursor: pointer
+            &:hover
+                background-color: lighten($Blue, 10%)
+            &.selected
+                background-color: $Orange
