@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, h6
     letter-spacing: 1px
     color: $Blue
     
+h2
+    line-height: 1.75rem
+    
 p
     margin-top: 0
     margin-bottom: 1rem
@@ -150,3 +153,14 @@ textarea
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
+@media screen and (max-width: 767px)
+    body
+        padding-bottom: 120px
+    div#content
+        margin-left: 10%
+        margin-right: 10%
+        
+@media screen and (max-width: 500px)
+    body
+        padding-bottom: 135px
